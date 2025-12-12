@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+Application - F2027006621 -
+        EPS
+    </title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=6, user-scalable=yes" name="viewport">
+    <link href="/Apps/RER/EPSPortal/Content/css/bootstrap/bootstrap.min.css?v=639010829480000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css?v=639010829480000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/skins/skin-blue.css?v=639010829500000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/toastr.css?v=639010829440000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/Site.css?v=639010829440000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/icheck/blue.min.css?v=639010829480000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/icheck/skins/square/blue.css?v=639010829680000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/select2.css?v=639010829440000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/AdminLTE.css?v=639010829440000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/font-awesome.min.css?v=639010829440000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/bootstrap-toggle/bootstrap-toggle.css?v=639010829480000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/daterangepicker.css?v=639010829440000000" rel="stylesheet"/>
+<link href="/Apps/RER/EPSPortal/Content/css/jquery.timepicker.min.css?v=639010829440000000" rel="stylesheet"/>
+
+
+    <link href="/Apps/RER/EPSPortal/Content/dataTables.bootstrap.min.css?v=639010829420000000" rel="stylesheet"/>
+
+
+    <script src="/Apps/RER/EPSPortal/Content/js/plugins/jquery/jquery-3.6.0.min.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/bootstrap/bootstrap.min.js?v=639010829660000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/datepicker/bootstrap-datepicker.js?v=639010829660000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/select2/select2.full.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/moment/moment.min.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js?v=639010829660000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/slimscroll/jquery.slimscroll.min.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/inputmask/jquery.inputmask.bundle.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/toastr/toastr.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/store.js/store.everything.min.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/icheck/icheck.js?v=639010829660000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/idleSessionTimeOut/idleSessionTimeout.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/dirtyforms/jquery.dirtyforms.js?v=639010829660000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/dirtyforms/jquery.dirtyforms.bootstrapModal.js?v=639010829660000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/bootstrap-toggle/bootstrap-toggle.js?v=639010829660000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/app.min.js?v=639010829460000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/init.js?v=639010829460000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/buttonLoading.js?v=639010829460000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/site.js?v=639010829460000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/shared.js?v=639010829460000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/daterangepicker.js?v=639010829460000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/jquery.timepicker.min.js?v=639010829460000000"></script>
+
+    <script src="/Apps/RER/EPSPortal/Content/js/plugins/jquery/jquery.unobtrusive-ajax.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/jquery/jquery.validate.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/jquery/jquery.validate.unobtrusive.js?v=639010829680000000"></script>
+<script src="/Apps/RER/EPSPortal/Content/js/plugins/jquery/jquery.Validate.unobtrusive.js?v=639010829680000000"></script>
+
+    
+    <script src="/Apps/RER/EPSPortal/Scripts/jquery.dataTables.min.js?v=639010829420000000"></script>
+<script src="/Apps/RER/EPSPortal/Scripts/dataTables.bootstrap.min.js?v=639010829420000000"></script>
+
+    <script src="/Apps/RER/EPSPortal/Scripts/jszip.min.js?v=639010829420000000"></script>
+<script src="/Apps/RER/EPSPortal/Scripts/pdfmake/pdfmake.min.js?v=639010829460000000"></script>
+<script src="/Apps/RER/EPSPortal/Scripts/pdfmake/vfs_fonts.js?v=639010829460000000"></script>
+
+
+    
+
+    <style>
+        .tooltip-box {
+            position: absolute;
+            background: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 1000;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+    <script type="text/javascript">
+        var currentController = "BRApplication";
+        var baseUrl = window.location.href.substr(0, window.location.href.indexOf(currentController));
+    </script>
+</head>
+<body class="skin-blue layout-top-nav">
+    <div class="wrapper">
+        
+    <header class="main-header">
+
+
+
+
+
+        <nav class="navbar navbar-static-top navbar-accessible-blue">
+            
+            <div class="navbar-header">
+                <a href=/Apps/RER/EPSPortal/ class="mdc-brand">
+                    <img src="/Apps/RER/EPSPortal/Content/img/md-logo.png" alt="Miami-Dade County Logo" style="" />
+                </a>
+
+                <span class="" style="color: white; font-size: 20px;">RER ELECTRONIC PERMITS & REVIEWS SYSTEM</span>
+
+            </div>
+
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                        <li><a href="/Apps/RER/EPSPortal/Account/Signin" id="loginLink">Sign in</a></li>
+                </ul>
+            </div>
+
+
+
+        </nav>
+    </header>
+
+        <!-- Full Width Column -->
+        <div class="content-wrapper" id="contentWrapper">
+
+            
+
+            <div class="container">
+                <!-- Main content -->
+                
+
+
+                <section class="content">
+
+                    
+
+<div class="nav-tabs-custom">
+    <div class="navbar-brand">
+        <div class="box-title" style="margin-top: 0px">Application: F2027006621 </div>
+    </div>
+
+    <ul class="nav nav-tabs pull-right">
+        <li class=""><a href="#tabIssuance" data-toggle="tab" aria-expanded="false"><i class="glyphicon glyphicon-file text-primary"></i>Issuance Information</a></li>
+        <li class=""><a href="#fees" data-toggle="tab" aria-expanded="false"><i class="glyphicon glyphicon-usd text-success"></i>&nbsp; Fees</a></li>
+        <li class=""><a href="#contacts" id="contactTabLink" data-toggle="tab" aria-expanded="false"><i class="glyphicon glyphicon-user text-primary"></i> Contacts</a></li>
+        <li class="active"><a href="#summary" data-toggle="tab" aria-expanded="true"><i class="glyphicon glyphicon-list text-primary"></i> &nbsp; Summary</a></li>
+    </ul>
+
+
+    <div class="tab-content">
+
+    
+        <div class="tab-pane" id="tabIssuance">
+            <div id="issuanceinformation_Container" class="row">
+                <div class="col-lg-12 col-md-12 ">
+                    <div class="box no-border">
+                        <div id="loading-issuance-information" style="left: 50%; margin-left: 50%;" class="hidden">
+                            <img src="/Apps/RER/EPSPortal/Content/img/ajax-loading-gif.gif" style="width: 40px; height: 40px"/>
+                        </div>
+                        <div id="issuance-information"></div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+        <div class="tab-pane" id="fees">
+
+
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <div class="btn-group pull-right">
+                <a target="_blank" href="/Apps/RER/EPSPortal/PlanReview/Payment/Payment/F2027006621?iNumberInvoices=True" class="btn btn-success btn-sm pull-right"><i class="fa fa-dollar"></i> &nbsp;&nbsp; Make a Payment</a>
+
+        </div>
+        <div class="pull-left">
+            <h3 class="box-title">
+                Fees
+            </h3>
+        </div>
+    </div>
+    <div style="margin-left:10px;">
+        Uninvoiced fees are subject to change pending completion of application process.
+    </div>
+    <div class="box-body">
+                <h4 class="box-title">
+                        <spam>Invoice:</spam> <strong>I2025126893</strong>
+                                                    <span class="badge bg-light-blue">INVOICED</span>
+
+                </h4>
+                <div class="table-responsive  table-with-scrollbars col-md-12">
+                    <table class="table table-condensed table-striped display-info">
+                        <tbody>
+                            <tr>
+                                <th class="col-md-1">Type</th>
+                                <th class="col-md-1">Code</th>
+                                <th class="col-md-3">Description</th>
+                                <th class="col-md-1" style="text-align: right">Qty</th>
+                                <th class="col-md-1" style="text-align: right">Orig. Amount</th>
+                                <th class="col-md-1" style="text-align: right">Amount Credited</th>
+                                <th class="col-md-1" style="text-align: right">Amount</th>
+                                <th class="col-md-1" style="text-align: right">Surcharge</th>
+                                <th class="col-md-1" style="text-align: center">Applied Date</th>
+                                <th class="col-md-1" style="text-align: center">Paid Date</th>
+                            </tr>
+
+                                    <tr>
+                                        <td>RECT</td>
+                                        <td>A121</td>
+                                        <td>RECERTIFICATION FEES</td>
+                                        <td style="text-align: right">1</td>
+                                        <td style="text-align: right">
+                                                <span>  $375.00</span>
+                                        </td>
+
+                                        <td style="text-align: right">$0.00</td>
+                                        <td style="text-align: right">
+                                                <span>$375.00</span>
+
+
+                                        </td>
+                                        <td style="text-align: right">$28.13</td>
+                                        <td style="text-align: center">4/22/2025</td>
+                                        <td style="text-align: center"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RSUR</td>
+                                        <td>SR01</td>
+                                        <td>RER  7.5% SURCHARGE</td>
+                                        <td style="text-align: right">1</td>
+                                        <td style="text-align: right">
+                                                <span>  </span>
+                                        </td>
+
+                                        <td style="text-align: right"></td>
+                                        <td style="text-align: right">
+                                                <span>$28.13</span>
+
+
+                                        </td>
+                                        <td style="text-align: right">$0.00</td>
+                                        <td style="text-align: center">4/22/2025</td>
+                                        <td style="text-align: center"></td>
+                                    </tr>
+                            <tr class="table-bordered">
+                                <td colspan="5"></td>
+                                <td>
+                                    <div style="text-align: right">
+                                        <strong>
+                                            Total:
+                                        </strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="text-align: right">
+                                        <strong>
+                                            <span id="TotalBox">
+                                                    <span>    $403.13</span>
+
+                                            </span>
+                                        </strong>
+                                    </div>
+                                </td>
+                                <td colspan="3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    </div>
+</div>        </div>
+
+        <div class="tab-pane" id="contacts">
+                <div class="row">
+                    <div class="no-border">
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="error-container alert alert-danger" role="alert">
+                                <h4>Access Denied</h4>
+                                <p>
+                                    <i class="fa fa-ban"></i> In order to view and edit contact information, you must be logged in and included in the contact list for this application.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="tab-pane active" id="summary">
+            <!-- Summary Collapsible Panel -->
+            <button class="btn btn-link" data-toggle="collapse" data-target="#summaryContent" aria-expanded="true" aria-controls="summaryContent" id="summaryToggle">
+                <i id="toggleIcon" class="glyphicon glyphicon-chevron-down"></i> <span id="toggleText">Collapse</span> Summary
+            </button>
+
+
+            <div id="summaryContent" class="collapse in">
+                <div class="row md-equal d-flex flex-wrap">
+                    <!-- Main content, with scrolling enabled -->
+                    <div class="col-md-12 col-lg-9 scrollable-container" style="overflow-y: auto; max-height: 80vh; max-width: 100%;">
+                        
+
+
+
+
+
+<div id="" class="box box-primary">
+    <div class="box-header">
+        <div class="table-responsive">
+            <div class="pull-left">
+                <h3 class="box-title">Application Summary</h3>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <!-- First Column -->
+            <div class="col-md-4">
+                <table class="table table-condensed display-info" style="margin-bottom: 0">
+                    <tbody>
+                        <tr>
+                            <td class="text-right col-md-2"><label for="TrackingNumber">Tracking Number</label>:</td>
+                            <td class="text-bold bg-gray-light col-md-2">
+                                <a href=/Apps/RER/EPSPortal/planreview/tracking/F2027006621>F2027006621</a>
+                                <span class="badge bg-green">In Progress</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right col-md-2"><label for="ApplicationDate">Application Date</label>:</td>
+                            <td class="text-bold bg-gray-light col-md-2">4/22/2025</td>
+                        </tr>
+                        <tr>
+                            <td class="text-right col-md-2"><label for="ApplicationTypeDescription">Application Type</label>:</td>
+                            <td class="text-bold bg-gray-light col-md-2"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-md-4">
+                <table class="table table-condensed display-info" style="margin-bottom: 0">
+                    <tbody>
+                        <tr>
+                            <td class="text-right col-md-2"><label for="PermitNumber">Permit Number</label>:</td>
+                            <td class="text-bold bg-gray-light col-md-2">F2027006621</td>
+                        </tr>
+                        <tr>
+                            <td class="text-right col-md-2"><label for="ExpirationDate">Recertification Due By</label>:</td>
+                            <td class="text-bold bg-gray-light col-md-2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-md-4">
+                <table class="table table-condensed display-info" style="margin-bottom: 0">
+                    <tbody>
+                        <tr>
+                            <td class="text-right col-md-2"><label for="SubmittalType">Submittal Type</label>:</td>
+                            <td class="text-bold bg-gray-light col-md-2">Electronic</td>
+                        </tr>
+                        <tr>
+                            <td class="text-right col-md-1"><i class="fa fa-bug text-red fa-lg"></i></td>
+                            <td class="text-bold bg-gray-light col-md-2">
+                                <a id="ImportErrors" href="/Apps/RER/EPSPortal/planreview/tracking/F2027006621/importerrors">
+                                    Import Errors
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right col-md-1"><i class="fa fa-rocket text-default fa-lg" title="Expedited"></i></td>
+                            <td class="text-bold bg-gray-light col-md-2"> <span> NO EXPEDITE</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+
+</script>
+
+
+
+
+
+
+                    </div>
+
+                    <!-- Proximity alerts image container -->
+                    <div class="col-md-12 col-lg-3 d-flex align-items-start">
+                        
+
+
+
+<div class="box no-border">
+    <div id="area-of-interest" style="height: 300px; width: 100%;"></div>
+</div>
+
+
+<script type="text/javascript">
+
+    document.addEventListener('DOMContentLoaded',
+        function() {
+
+            if ($("#area-of-interest") !== undefined) {
+                var url =
+                    'https://www.miamidade.gov/Apps/RER/EPSPortal/PlanReview/ProximityAlerts/GetAreaOfInterestImage/2905319?folio=3041310370001';
+
+                $.ajax({
+                    url: url,
+                    type: "get",
+                    cache: true,
+                    dataType: "json",
+                    beforeSend: function() {
+                        $("#area-of-interest")
+                            .html('<div class="loading"><i class="fa fa-spinner fa-spin fa-3x fa-fw"><span class="sr-only">Loader</span></i></div>');
+                    }
+                }).done(function(data) {
+                    var img = $('<img alt="Area Of Interest Image" /img>').addClass('img-responsive').css({ width: "100%", height: "100%" }).attr('src', data.imgDataUrl);
+                    $("#area-of-interest").html(img);
+                });
+            }
+        });
+</script>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Information Collapsible Panel -->
+            <button class="btn btn-link" data-toggle="collapse" data-target="#locationContent" aria-expanded="true" aria-controls="locationContent" id="locationToggle">
+                <i id="locationIcon" class="glyphicon glyphicon-chevron-down"></i> <span id="locationText">Collapse</span> Location Information
+            </button>
+
+            <div id="locationContent" class="collapse in">
+                <div class="row md-equal">
+                    <div class="col-md-12">
+
+                        <div id="locationSummary" class="box box-primary">
+                            <div class="box-header">
+                                <div class="table-responsive">
+                                    <h3 class="box-title">Location Summary</h3>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- First Column -->
+                                <div class="col-md-4">
+                                    <table class="table table-condensed display-info" style="margin-bottom: 0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-right col-md-2"><label for="Addresses">Address(es)</label>:</td>
+
+                                                    <td class="text-bold bg-gray-light col-md-2">
+5511 SW 78 ST                                                    </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right col-md-2"><label for="Folios">Folio(s)</label>:</td>
+                                                    <td class="text-bold bg-gray-light col-md-2">
+                                                                <a href="#" data-toggle="popover" data-trigger="focus" data-html="true" data-container="body" data-content="&lt;b&gt;3041310370001&lt;br /&gt;3041310370320&lt;br /&gt;3041310370310&lt;br /&gt;3041310370300&lt;br /&gt;3041310370290&lt;/b&gt;">30-4131-037-0001 ...</a>
+                                                    </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right col-md-2"><label for="SquareFootage">Square Footage</label>:</td>
+                                                <td class="text-bold bg-gray-light col-md-2">2,688</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Second Column -->
+                                <div class="col-md-4">
+                                    <table class="table table-condensed display-info" style="margin-bottom: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-right col-md-2"><label for="PropertyType">Property Type</label>:</td>
+                                            <td class="text-bold bg-gray-light col-md-2">Commercial</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><label for="Municipality">Municipality</label>:</td>
+                                            <td class="text-bold bg-gray-light">
+UNINCORPORATED MIAMI-DADE                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><label for="CommDistrict">Commission District</label>:</td>
+                                            <td class="text-bold bg-gray-light">7</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <!-- Third Column -->
+                                <div class="col-md-4">
+                                    <table class="table table-condensed display-info" style="margin-bottom: 0">
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-right col-md-2"><label for="CountyOwned">County Owned</label>:</td>
+                                            <td class="text-bold bg-gray-light col-md-2"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Tabs for Plan History, Events, Import/Rework, Documents, etc. -->
+            <div id="planHistory_tabs" class="nav-tabs-custom">
+                <ul id="tabMenus" class="nav nav-tabs">
+                        <li class="pull-right">
+                            <a href="#tabDocuments" id="DocumentsImported" data-toggle="tab" aria-expanded="false">
+                                <i class="glyphicon glyphicon-file text-navy"></i> Documents
+                                <span id="numberDocumentsImported" class="badge bg-default" style="margin-bottom: 3px">1</span>
+                            </a>
+                        </li>
+
+                    <li class="pull-right">
+                        <a href="#tabImportRework" data-toggle="tab" aria-expanded="false">
+                            <i class="glyphicon glyphicon-book text-success">
+                                <span class="sr-only">Displays tab containing options to upload documents</span>
+                            </i> Import/Rework
+                        </a>
+                    </li>
+                    
+                    <li class="pull-right"><a href="#tabEvents" data-toggle="tab" aria-expanded="false"><i class="fa fa-calendar text-primary"></i> Events</a></li>
+                    <li class="pull-right"><a href="#tabHistory" data-toggle="tab" aria-expanded="false"><i class="glyphicon glyphicon-list text-primary"></i> Tracking</a></li>
+                    <li class="pull-right"><a href="#tabSummary" data-toggle="tab" aria-expanded="true"><i class="glyphicon glyphicon-list text-primary"></i> Review Summary</a></li>
+                </ul>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane" id="tabHistory">
+                    <div id="planHistory_Container" class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="box no-border">
+                                <div id="loading-history" style="left: 50%; margin-left: 50%;" class="hidden">
+                                    <img src="/Apps/RER/EPSPortal/Content/img/ajax-loading-gif.gif" style="width: 40px; height: 40px" />
+                                </div>
+                                <div id="history_table" class="box box-primary"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tabSummary">
+                    <div id="planSummary_Container" class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="box no-border">
+                                <div id="summary_table">
+                                    
+
+<div class="box box-primary">
+    <div class="box-header">
+        <p>
+            <label>
+                Click the disposition icon to access reviewer comments and remarks.
+            </label>
+        </p>
+
+                <p>
+                    <label>
+                        To meet with your Plan Reviewer, either online or in-person, please visit our 
+                        <a href="https://www.miamidade.gov/Apps/RER/meetq/portal">MeetQ</a> system and register to schedule an appointment.
+                    </label>
+                </p>
+
+        </div>
+    <div id="tl-grid">
+            <div id="loading-tl" style="left: 50%; margin-left: 50%;">
+                <img src="/Apps/RER/EPSPortal/Content/img/ajax-loading-gif.gif" style="width: 40px; height: 40px" />
+            </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    document.addEventListener('DOMContentLoaded', function() {
+           loadTaskList();
+        });
+
+    function loadTaskList() {
+        var url = '/Apps/RER/EPSPortal/PlanReview/Applications/ApplicationTasks?applicationId=2905319';
+
+        $.ajax({
+            url: url,
+            type: "get",
+            beforeSend: function () {
+                $("#tl-grid")
+                    .html('<div class="loading"><i class="fa fa-spinner fa-spin fa-3x fa-fw"><span class="sr-only">Loader</span></i></div>');
+            }
+        }).done(function (data) {
+            $("#tl-grid").html(data);
+
+            applyDispositionStyle();
+
+            taskTable = $('#application-tasks-table').DataTable({
+                ordering: false,
+                paging: false,
+                searching: false,
+                info: false
+            });
+        });
+    }
+
+</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="tabEvents">
+                    <div id="planHistory_Container" class="row">
+                        <div class="col-lg-12 col-md-12 ">
+                            <div class="box no-border">
+                                <div id="loading-events" style="left: 50%; margin-left: 50%;" class="hidden">
+                                    <img src="/Apps/RER/EPSPortal/Content/img/ajax-loading-gif.gif" style="width: 40px; height: 40px" />
+                                </div>
+                                <div id="events">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tabImportRework">
+                    <div id="importRework_Container" class="row">
+                        <div id="loading-import-rework" style="left: 50%; margin-left: 50%;" class="hidden">
+                            <img src="/Apps/RER/EPSPortal/Content/img/ajax-loading-gif.gif" style="width: 40px; height: 40px" />
+                        </div>
+                        <div id="import-rework"></div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tabDocuments">
+                    <div id="documents_Container" class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="box box-primary">
+                                <div id="loading-documents" style="left: 50%; margin-left: 50%;" class="hidden">
+                                    <img src="/Apps/RER/EPSPortal/Content/img/ajax-loading-gif.gif" style="width: 40px; height: 40px" />
+                                </div>
+                                <div id="documents" align="center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="showDisapprovalModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true" data-backdrop="static" data-keyboard="true">
+                    <div class="modal-dialog" style="width: 768px">
+                        <div class="modal-content">
+                            <div class="modal-header bg-success">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 id="showDisapprovalTitle" class="modal-title text-success text-bold"> Disapproval Codes</h4>
+                            </div>
+                            <div class="modal-body" id="showDisapprovalContent" style="padding: 5px"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal" style="width: 100px">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                </section>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="container">
+                <ul class="col-md-4 col-xs-8">
+                    <li style="margin-top:10px"><a class="accessible-link" rel="noopener noreferrer" target="_blank" href="https://www.miamidade.gov">Miami-Dade Home</a></li>
+                    <li style="margin-top:10px"><a class="accessible-link" rel="noopener noreferrer" target="_blank" href="https://www.miamidade.gov/global/disclaimer/privacy-and-security.page">Privacy Statement</a></li>
+                    <li style="margin-top:10px"><a class="accessible-link" rel="noopener noreferrer" target="_blank" href="https://www.miamidade.gov/global/disclaimer/disclaimer.page">Disclaimer</a></li>
+                    <li style="margin-top:10px"><a class="accessible-link" rel="noopener noreferrer" target="_blank" href="https://www.miamidade.gov/global/311.page">Contact</a></li>
+                </ul>
+                <div class="col-md-4 col-xs-4 social-media">
+                    <div class="social-media-links">
+                        <a aria-label="Facebook" style="margin-top:10px" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/miami.dade.county"><i class="fa fa-lg fa-facebook"></i></a>
+                        <a aria-label="Twitter" style="margin-top:10px" rel="noopener noreferrer" target="_blank" href="https://twitter.com/MiamiDadeCounty"><i class="fa fa-lg fa-twitter"></i></a>
+                        <a aria-label="Linked In" style="margin-top:10px" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/company/miami-dade-county"><i class="fa fa-lg fa-linkedin"></i></a>
+                        <a  aria-label="Youtube" style="margin-top:10px" rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/user/MiamiDadeTV"><i class="fa fa-lg fa-youtube"></i></a>
+                        <a aria-label="Instagram" style="margin-top:10px" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/miamidademedia/"><i class="fa fa-lg fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 copyright">
+                    <div>
+                        &copy; 2025 Miami-Dade County. All rights reserved.
+                    </div>
+                    <div>
+                        <i class="pull-right" style="font-size: x-small">20251211.8
+</i>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        $(function() {
+            $.fn.dataTable.customInitDataTablesFilter = function(settings) {
+                $('#' + settings.sTableId + '_filter label').addClass('input-group input-group-sm');
+                $('#' + settings.sTableId + '_filter label input').attr('placeholder', 'filter');
+                $('#' + settings.sTableId + '_filter label input').addClass('pull-right');
+                $('#' + settings.sTableId + '_filter label').each(function() {
+                    $(this).append('<div class="input-group-addon"><i class="fa fa-filter" style="padding-left: 5px"><span class="sr-only">Filter history</span></i></div>');
+                });
+            }
+
+            $.extend(true, $.fn.dataTable.defaults, {
+                "pagingType": "full_numbers",
+                "dom":
+                    "<'row'<'col-sm-12'<'pull-right'f><'pull-right hide'B>>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-12'<'pull-left'l><'pull-left'i><'pull-right'p>>>",
+                "buttons": [],
+                "language": {
+                    "paginate": {
+                        "first": "<<",
+                        "previous": "<",
+                        "next": ">",
+                        "last": ">>"
+                    },
+                    "search": ""
+                },
+                "initComplete": function(settings, json) {
+                    $.fn.dataTable.customInitDataTablesFilter(settings);
+                }
+            });
+        });
+       
+        //log errors to console instead of default JS alert
+        $.fn.dataTable.ext.errMode = function (settings, helpPage, message) {
+            console.log(message);
+        };
+
+    </script>
+
+<script type="text/javascript">
+
+</script>
+
+
+    
+
+<script type = "text/javascript" >
+$(document).ready(function ()
+{
+
+});
+</script>
+
+    
+    <script type="text/javascript">
+
+        function selectCurrentTab(tab) {
+            if (tab) {
+                $('.nav-tabs a[href="#' + tab + '"]').tab('show');
+            }
+        }
+
+
+        $(function () {
+            selectCurrentTab('');
+        });
+
+                // load ajax history tab partial view
+        function loadHistory() {
+            var url = "/Apps/RER/EPSPortal/planreview/history/TrackingHistory";
+            var trackingId = 3612414;
+
+            if (trackingId < 1) {
+                return false;
+            }
+
+            $.ajax({
+                url: url,
+                type: "get",
+                data: {
+                    id: trackingId
+                },
+                beforeSend: function() {
+                    $("#history_table").html('<div class="loading"><i class="fa fa-spinner fa-spin fa-3x fa-fw"><span class="sr-only">Loader</span></i></div>');
+                },
+                complete: function() {
+                    applyDispositionStyle();
+
+                    if ($("td.taskType")) {
+                        $($("td.taskType")).each(function() {
+                            if ($(this).attr("data-code") === "EFUS") {
+                                $(this).parent().addClass("warning");
+                            }
+                        });
+                    }
+                }
+            })
+                .done(function (data) {
+                    $("#history_table").html("");
+                    $("#loading-history").addClass('hidden');
+                    $("#history_table").html(data);
+                    if (data.indexOf("No Plan History") === -1) {
+                        initTrackingHistory(data);
+                    }
+                });
+        }
+
+        function loadDocuments() {
+
+            if (!true) return;
+            $('#currentTab').val('tabDocuments');
+            var url = "/Apps/RER/EPSPortal/PlanReview/Documents/Documents";
+            var trackingNum = 'F2027006621';
+
+            $.ajax({
+                url: url,
+                type: "get",
+                data: {
+                    trackingNum: trackingNum
+                },
+                beforeSend: function() {
+                    $("#loading-documents").removeClass('hidden');
+                }
+            })
+                .done(function(data) {
+                    $("#documents").html("");
+                    $("#loading-documents").addClass('hidden');
+                    $("#documents").html(data);
+                    initDocuments();
+                })
+                .fail(function() {
+                    $("#loading-documents").addClass('hidden');
+                });
+        }
+
+        function loadIssuanceInformation() {
+
+            var processNumber = 'F2027006621';
+            var url = "/Apps/RER/EPSPortal/planreview/permits/IssuanceInformationDetails/ProcessNumber1234";
+            url = url.replace("ProcessNumber1234", encodeURIComponent(processNumber));
+
+
+            if (processNumber < 1) {
+                return false;
+            }
+
+            $.ajax({
+                url: url,
+                type: "get",
+                data: {
+                    processNumber: processNumber
+                },
+                beforeSend: function () {
+                    $("#loading-issuance-information").removeClass('hidden');
+                }
+            })
+           .done(function (data) {
+               $("#issuance-information").html("");
+                    $("#loading-issuance-information").addClass('hidden');
+                    $("#issuance-information").html(data);
+                    $('#currentTab').val('tabIssuance');
+                })
+           .fail(function () {
+                    $("#loading-issuance-information").addClass('hidden');
+                });
+        }
+
+           // init tab based on current url
+            $('a[data-toggle="tab"]').on('shown.bs.tab',
+                function (e) {
+                    var target = $(e.target).attr("href");
+
+                    if (target === "#tabHistory") {
+                        loadHistory();
+                    } else if (target === '#tabImportRework') {
+
+                        loadImportRework();
+                    } else if (target === "#tabSummary") {
+                        loadTaskList();
+                    }
+                    else if (target === '#tabDocuments') {
+                        loadDocuments();
+                    }
+                    else if (target === '#tabEvents') {
+                        loadEventsTab();
+                    } else if (target === '#tabIssuance') {
+                        loadIssuanceInformation();
+                    }
+                });
+            $('.nav-tabs a[href="#tabSummary"]').tab('show');
+
+
+
+
+        var urlGetJnTasks = "/Apps/RER/EPSPortal/planreview/history/GetJnTasks";
+
+                function loadEventsTab() {
+
+            var url = "/Apps/RER/EPSPortal/PlanReview/ApplicationEvents/_Events";
+
+            var appId = '2905319';
+
+            $.ajax({
+                    url,
+                    type: "get",
+                    data: {
+                        appId: appId
+                    },
+                    beforeSend: function() {
+                        $("#loading-events").removeClass('hidden');
+                    }
+                })
+                .done(function(data) {
+                    $("#events").html("");
+                    $("#loading-events").addClass('hidden');
+                    $("#events").html(data);
+                    $('#currentTab').val('tabEvents');
+                    initAppEventsHandler();
+                })
+                .fail(function() {
+                    $("#loading-events").addClass('hidden');
+                });
+
+        }
+
+        // load ajax import/rework tab partial view
+        function loadImportRework() {
+            $('#currentTab').val('tabImportRework');
+            var url = "/Apps/RER/EPSPortal/PlanReview/ImportRework/ImportRework";
+
+            var trackingId = 3612414;
+
+            $.ajax({
+                url: url,
+                type: "get",
+                data: {
+                    trackingId: trackingId
+                },
+                beforeSend: function() {
+                    $("#loading-import-rework").removeClass('hidden');
+                },
+                complete: function() {
+                    applyDispositionStyle();
+                }
+            })
+                .done(function(data) {
+                    $("#import-rework").html("");
+                    $("#loading-import-rework").addClass('hidden');
+                    $("#import-rework").html(data);
+                    initImportRework();
+                })
+                .fail(function() {
+                    $("#loading-import-rework").addClass('hidden');
+                });
+        }
+        function toggleIconAndText(contentId, iconId, textId) {
+            $(`#${contentId}`).on('shown.bs.collapse', function () {
+                $(`#${iconId}`).removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                $(`#${textId}`).text('Collapse');
+            }).on('hidden.bs.collapse', function () {
+                $(`#${iconId}`).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                $(`#${textId}`).text('Expand');
+            });
+        }
+
+        // Apply the function to both "Summary" and "Location Information" sections
+        toggleIconAndText('summaryContent', 'toggleIcon', 'toggleText');
+        toggleIconAndText('locationContent', 'locationIcon', 'locationText');
+    </script>
+
+</body>
+</html>
